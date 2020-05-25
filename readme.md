@@ -6,4 +6,4 @@ This was my first layout coded from PSD file.
 * CSS
 
 ### Live version:
-[CLICK HERE](https://susanel92.github.io/harry-potter-memory-game/)
+[CLICK HERE](https://susanel92.github.io/we-create-layout-01/)
