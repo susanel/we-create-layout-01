@@ -85,25 +85,24 @@ header h1 {
   font-size: 11.6rem;
   font-weight: 700;
   /* line-height: 445px; */
-
 }
 
 header p {
   font-family: 'Roboto', sans-serif;
   font-size: 2.1rem;
+  letter-spacing: 2px;
 }
 
 /* SECTION FEATURES */
 
-/* .features {
-   max-width: 1024px;
-   margin: 0 auto;
-} */
+.features {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 
 .features div.feature {
-  max-width: 1024px; 
   position: relative;
-  margin: 60px auto;
+  margin: 60px 5%;
 }
 
 .features p.bg {
@@ -178,10 +177,10 @@ header p {
 }
 
 .features div.ideas {
-  width: 100vw;
   height: 250px;
   background-image: url("../img/fullbg.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .features div.ideas p {
@@ -191,4 +190,63 @@ header p {
   color: #fff;
   line-height: 250px;
   text-align: center;
+}
+
+/* SECTION CONTACT */
+
+.contact {
+  min-height: 445px;
+  background: linear-gradient(13.06deg, #9326F0 8.17%, #FF7FC4 91.83%);
+}
+
+.contact div.wrap {
+  margin: 0 5%;
+  padding: 50px 0;
+}
+
+.contact div.hello {
+  float: left;
+  width: 50%;
+  padding-top: 60px;
+  /* padding: 0 7% 0 0; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 63px;
+  color: #440C74;
+}
+
+.contact form {
+  float: left;
+  width: 50%;
+}
+
+.contact label {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  margin: 10px 0 30px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #440C74;
+}
+
+.contact textarea {
+  height: 120px;
+  border: 2px solid #440C74;
+}
+
+.contact button {
+  padding: 10px 50px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
