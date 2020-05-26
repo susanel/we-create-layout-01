@@ -2,6 +2,7 @@
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
 
+/* GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,10 @@
 html {
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
+}
+
+button:focus, input:focus, textarea:focus {
+  outline: none;
 }
 
 .clearfix::after {
@@ -30,18 +35,19 @@ nav {
 
 nav ul {
   list-style: none;
-  max-width: 500px;
   margin: 0 auto;
   padding: 30px 0;
+  text-align: center;
+  /* font-size: 0; */
 }
 
 nav li {
-  float: left;
-  width: 25%;
+  display: inline-block;
 }
 
 nav a {
   display: block;
+  margin: 0 10px;
   text-align: center;
   color: #582782;
   text-decoration: none;
@@ -58,6 +64,10 @@ nav a:hover {
 }
 
 /* 2. HEADER */
+
+.wrapper {
+  overflow: hidden;
+}
 
 header {
   position: relative;
@@ -96,15 +106,16 @@ header div.wave-top1, header div.wave-top2 {
 }
 
 header div.wave-top1 {
-  width: 300px;
-  right: -30px;
-  bottom: -22px;
+  width: 500px;
+  right: -60px;
+  /* right: 0px; */
+  bottom: -30px;
 }
 
 header div.wave-top2 {
-  width: 200px;
+  width: 300px;
   right: 0;
-  bottom: 20px;
+  bottom: 60px;
 }
 
 /* 3. SECTION FEATURES */
@@ -115,38 +126,38 @@ header div.wave-top2 {
 }
 
 .features div.feature {
-  position: relative;
   margin: 60px 5%;
 }
 
+.features div.about {
+  position: relative;
+  float: left;
+  /* width: 35%; */
+  /* margin-left: 15%; */
+  width: 50%;
+  padding: 0 50px 0 100px;
+}
+
+/* numbers in the background */
 .features p.bg {
   position: absolute;
   top: -30px;
-  left: 0;
+  left: -10px;
   font-family: 'Montserrat', sans-serif;
   font-size: 24.7rem;
   font-weight: 700;
   color: #E579D7;
   line-height: 100%;
   z-index: -1;
+  letter-spacing: 40px;
 }
 
-/* numbers in the background */
 .features .feature:nth-child(2) p.bg {
   color: #FB8097;
-  top: -30px;
-  left: auto;
-  right: 180px;
 }
 
 .features .feature:nth-child(3) p.bg {
   color: #E421B4;
-}
-
-.features div.about {
-  float: left;
-  width: 35%;
-  margin-left: 15%;
 }
 
 .features div.feature:nth-of-type(2) .about {
@@ -189,7 +200,9 @@ header div.wave-top2 {
   color: #fff;
   background-color:#E579D7;
   border-color: #E579D7;
+  transform: translateY(10px);
 }
+
 
 /* buttons hover colors */
 .features div.feature:nth-of-type(2) button:hover {
@@ -228,7 +241,7 @@ header div.wave-top2 {
 /* waves decor */
 .features div.wave-bottom {
   position: absolute;
-  width: 300px;
+  width: 400px;
   left: 0px;
   bottom: -22px;
 }
@@ -285,6 +298,11 @@ header div.wave-top2 {
   border: none;
   border-bottom: 2px solid #440C74;
 }
+
+.contact input:focus, .contact textarea:focus {
+  background-color: #E579D7;
+}
+
 
 .contact textarea {
   margin-top: 20px;
