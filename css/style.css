@@ -18,7 +18,7 @@ html {
   clear: both;
 }
 
-/* NAVIGATION */
+/* 1. NAVIGATION */
 
 nav {
   position: absolute;
@@ -29,9 +29,9 @@ nav {
 
 nav ul {
   list-style: none;
-  max-width: 570px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 30px 0;
 }
 
 nav li {
@@ -42,8 +42,6 @@ nav li {
 
 nav a {
   display: block;
-  width: 110px;
-  margin: 0 10px;
   text-align: center;
   color: #582782;
   text-decoration: none;
@@ -52,17 +50,18 @@ nav a {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 nav a:hover {
   color: white;
 }
 
-/* HEADER */
+/* 2. HEADER */
 
 header {
   position: relative;
-  background: linear-gradient(9.33deg, #FE6B83 8.5%, #9326F0 91.49%); 
+  background: linear-gradient(23.33deg, #FE6B83 16.5%, #9326F0 79.49%); 
   height: 445px;
   color: #fff;
   margin-bottom: 40px;
@@ -77,14 +76,12 @@ header {
   left: 50%;
   margin-left: -320px;
   margin-top: -85px;
-  /* line-height: 445px; */
 }
 
 header h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 11.6rem;
   font-weight: 700;
-  /* line-height: 445px; */
 }
 
 header p {
@@ -93,7 +90,7 @@ header p {
   letter-spacing: 2px;
 }
 
-/* SECTION FEATURES */
+/* 3. SECTION FEATURES */
 
 .features {
   max-width: 1600px;
@@ -117,6 +114,7 @@ header p {
   z-index: -1;
 }
 
+/* numbers in the background */
 .features .feature:nth-child(2) p.bg {
   color: #FB8097;
   top: -30px;
@@ -152,8 +150,6 @@ header p {
 }
 
 .features p.description {
-  /* padding-right: 50px; */
-  
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
   line-height: 160%;
@@ -168,6 +164,27 @@ header p {
   color: #440C74;
   background-color: transparent;
   border: 1px solid #C244C1;
+  transition: .3s;
+}
+
+.features button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color:#E579D7;
+  border-color: #E579D7;
+}
+
+/* numbers in the background */
+.features div.feature:nth-of-type(2) button:hover {
+  background-color: #FB8097;
+  border-color: #FB8097;
+
+}
+
+.features div.feature:nth-of-type(3) button:hover {
+  background-color: #E421B4;
+  border-color: #E421B4;
+
 }
 
 .features img {
@@ -192,22 +209,24 @@ header p {
   text-align: center;
 }
 
-/* SECTION CONTACT */
+/* 4. SECTION CONTACT */
 
 .contact {
+  padding: 50px 5%;
   min-height: 445px;
-  background: linear-gradient(13.06deg, #9326F0 8.17%, #FF7FC4 91.83%);
+  background: linear-gradient(265.06deg, #9326F0 -12.83%, #FF7FC4 83.83%);
 }
 
 .contact div.wrap {
-  margin: 0 5%;
-  padding: 50px 0;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .contact div.hello {
   float: left;
   width: 50%;
   padding-top: 60px;
+  padding-left: 5%;
   /* padding: 0 7% 0 0; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -215,19 +234,28 @@ header p {
   color: #440C74;
 }
 
+.contact p.annotation {
+  margin-top: 160px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #541879;
+}
+
 .contact form {
   float: left;
   width: 50%;
+  padding: 0 5%;
 }
 
 .contact label {
+  display: block;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
 }
 
 .contact input, .contact textarea {
-  width: 100%;
-  margin: 10px 0 30px;
+  width: 409px;
+  margin-bottom: 40px;
   padding: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -237,7 +265,8 @@ header p {
 }
 
 .contact textarea {
-  height: 120px;
+  margin-top: 20px;
+  height: 100px;
   border: 2px solid #440C74;
 }
 
@@ -249,4 +278,11 @@ header p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
+  transition: .3s;
+}
+
+.contact button:hover {
+  cursor: pointer;
+  color: #440C74;
+  background-color: #fff;
 }
