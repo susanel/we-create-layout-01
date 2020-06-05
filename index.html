@@ -18,10 +18,10 @@
 
       <nav>
         <ul>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#team">team</a></li>
-          <li><a href="#mission">mission</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li><a id="projects" href="#">projects</a></li>
+          <li><a id="team" href="#">team</a></li>
+          <li><a id="mission" href="#">mission</a></li>
+          <li><a id="contact" href="#">contact</a></li>
         </ul>
       </nav>
 
@@ -42,7 +42,7 @@
 
   </div>
 
-  <section class="features">
+  <section class="features" data-section="projects">
 
     <div class="feature clearfix" id="projects">
       <div class="about">
@@ -60,7 +60,7 @@
       </div>
     </div>
 
-    <div class="feature clearfix" id="team">
+    <div class="feature clearfix" data-section="team">
       <div class="about">
         <p class="bg">2.</p>
 
@@ -84,7 +84,7 @@
       </div>
     </div>
 
-    <div class="feature clearfix" id="mission">
+    <div class="feature clearfix" data-section="mission">
       <div class="about">
         <p class="bg">3.</p>
         <h1>experience</h1>
@@ -102,7 +102,7 @@
 
   </section>
 
-  <section class="contact" id="contact">
+  <section class="contact" data-section="contact">
 
     <div class="wrap clearfix">
       <div class="hello">
