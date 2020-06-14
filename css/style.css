@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -14,7 +15,9 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-button:focus, input:focus, textarea:focus {
+button:focus,
+input:focus,
+textarea:focus {
   outline: none;
 }
 
@@ -25,7 +28,6 @@ button:focus, input:focus, textarea:focus {
 }
 
 /* 1. NAVIGATION */
-
 nav {
   position: absolute;
   top: 0;
@@ -64,7 +66,6 @@ nav a:hover {
 }
 
 /* 2. HEADER */
-
 .wrapper {
   overflow: hidden;
 }
@@ -73,7 +74,7 @@ header {
   position: relative;
   height: 445px;
   margin-bottom: 40px;
-  background: linear-gradient(23.33deg, #FE6B83 16.5%, #9326F0 79.49%); 
+  background: linear-gradient(23.33deg, #FE6B83 16.5%, #9326F0 79.49%);
   color: #fff;
 }
 
@@ -101,7 +102,8 @@ header p {
 }
 
 /* waves decor */
-header div.wave-top1, header div.wave-top2 {
+header div.wave-top1,
+header div.wave-top2 {
   position: absolute;
 }
 
@@ -119,7 +121,6 @@ header div.wave-top2 {
 }
 
 /* 3. SECTION FEATURES */
-
 .features {
   max-width: 1600px;
   margin: 0 auto;
@@ -174,7 +175,7 @@ header div.wave-top2 {
   font-size: 2.7rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: #5F1B98;;
+  color: #5F1B98;
 }
 
 .features p.description {
@@ -192,17 +193,18 @@ header div.wave-top2 {
   color: #440C74;
   background-color: transparent;
   border: 1px solid #C244C1;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
 .features button:hover {
   cursor: pointer;
   color: #fff;
-  background-color:#E579D7;
+  background-color: #E579D7;
   border-color: #E579D7;
+  -webkit-transform: translateY(10px);
   transform: translateY(10px);
 }
-
 
 /* buttons hover colors */
 .features div.feature:nth-of-type(2) button:hover {
@@ -247,7 +249,6 @@ header div.wave-top2 {
 }
 
 /* 4. SECTION CONTACT */
-
 .contact {
   padding: 50px 5%;
   min-height: 445px;
@@ -288,7 +289,8 @@ header div.wave-top2 {
   font-family: 'Roboto', sans-serif;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   width: 409px;
   margin-bottom: 40px;
   padding: 10px;
@@ -299,10 +301,10 @@ header div.wave-top2 {
   border-bottom: 2px solid #440C74;
 }
 
-.contact input:focus, .contact textarea:focus {
+.contact input:focus,
+.contact textarea:focus {
   background-color: #E579D7;
 }
-
 
 .contact textarea {
   margin-top: 20px;
@@ -318,6 +320,7 @@ header div.wave-top2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
