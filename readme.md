@@ -4,7 +4,7 @@ This was my first layout coded from PSD file.
 ## Technologies used:
 * HTML
 * CSS
-* JavaScript (jQuery libary)
+* JavaScript (jQuery library)
 
 ### Live version:
 [CLICK HERE](https://susanel92.github.io/we-create-layout-01/)
