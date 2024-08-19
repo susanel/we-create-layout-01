@@ -7,4 +7,4 @@ This was my first layout coded from PSD file.
 * JavaScript (jQuery library)
 
 ### Live version:
-[CLICK HERE](https://susanel92.github.io/we-create-layout-01/)
+[CLICK HERE](https://susanel.github.io/we-create-layout-01/)
